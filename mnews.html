@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="{%static "css/mnews.css" %}">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="jumbotron" align='center'>
+      <h1>WELCOME TO THE MOVIES NEWS INFORMATION</h1><br>
+      <h2>HEADLINES FOR TODAY</h2>
+      <ul>
+        <li>{{news1}}</li>
+        <li>{{news2}}</li>
+        <li>{{news3}}</li>
+        <li>{{news4}}</li>
+        <li>{{news5}}</li>
+      </ul>
+    </div>
+    <a class="btn btn-primary btn-lg" role="button" href="/home">BACK</a>
+  </div>
+  </body>
+</html>
